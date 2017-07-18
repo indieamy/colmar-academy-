@@ -2,6 +2,21 @@ body {
 	font-family: 'Helvetica';
 }
 
+h2 {
+color: teal;	
+font-size: 2rem;
+font-weight: 600;
+}
+
+h4 {
+	color: grey;
+	font-size: 1.2rem;
+}
+
+p, span, a {
+	line-height: 1.4rem;
+}
+	
 
 /*********Header*********/
 header {
@@ -198,6 +213,14 @@ nav a:hover {
 	flex-direction: column;
 }
 
+.main-image > h2, 
+.main-image > p, 
+.main-image > span,
+.main-image > a {
+	width: 80%;
+	padding-left: 3rem;
+}
+
 .articles {
 	display: flex;
 	justify-content: flex-start;
@@ -328,7 +351,14 @@ nav a:hover {
 	justify-content: flex-start;
 	height: 550px;
 	margin-bottom: 6rem;}
+	
+.academia h2 {
+	text-align: left;
+}
 
+.thesis {
+	text-align: center;
+}
 .urban {
 	display: flex;
 	justify-content: flex-start;
