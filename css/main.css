@@ -239,10 +239,41 @@ nav a:hover {
 	.article img {
 		max-width: 100%;
 	}
+	
+	.course img, .course h5, .course p {
+		display: none;
+	}
+	
+	video {
+		max-width: 350px;
+		height: auto;
+		align-content: center;
+		margin-left: 0;
+	}
+	
+	.video h2, .video p {
+		display: none;
+	}
+	
+	.news-stories, .story h4, .story span {
+		display: none;
+	}
+
+.terms {
+	display: none;
+}
 }
 
 @media only screen and (min-width: 481px) {
 	.mobile-img {
+		display: none;
+	}
+	
+	.learning-mobile {
+		display: none;
+	}
+	
+	.classes-mobile {
 		display: none;
 	}
 }
@@ -252,16 +283,92 @@ nav a:hover {
 .courses {
 	display: flex;
 	justify-content: center;
+	flex-wrap: wrap;
 	height: 800px;
 	margin: 3rem 2rem;
 }
 
+.row {
+	display: flex;
+	justify-content: center;
+	flex-direction: row;
+}
+
 .course {
-	align-content: space-around;
 	align-items: center;
-	flex-wrap: wrap;
 }
 
 .course img {
-	max-width: 100%;
+	max-width: 95%;
+}
+
+.classes-mobile {
+	text-align: left;
+}
+
+@media only screen and (max-width: 480px) {
+	
+	.courses, .learning {
+	display: none;
+	}
+	
+	.mobile-courses {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		flex-direction: column;
+		margin-top: 40rem;
+	}
+}
+
+/*************News Section************/
+
+.academia {
+	display: flex;
+	justify-content: flex-start;
+	height: 550px;
+	margin-bottom: 6rem;}
+
+.urban {
+	display: flex;
+	justify-content: flex-start;
+	max-width: 55%;
+	margin-left: 2rem;
+}
+
+.news-stories {
+	display: flex;
+	justify-content: flex-start;
+	flex-direction: column;
+	max-width: 420px;
+	margin: 2rem 2rem;
+	padding-left: 5rem;
+}
+
+.story {
+	display: flex;
+	padding: 1rem 0;
+}
+
+.story img {
+	max-width: 80%;
+}
+
+@media only screen and (max-width: 480px)
+{
+	.academia {
+	display: flex;
+	justify-content: flex-start;
+	height: 260px;
+	margin-top: 5rem;
+}
+}
+
+.footer {
+	display: inline-block;
+	height: 20px;
+}
+
+.terms {
+	float: right;
 }
